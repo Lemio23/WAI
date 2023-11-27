@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="icon" type="image/jpg" href="Pictures/kebabicon.jpg">
+    <script src="script.js"></script>
+    <title>Sign up for our show!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body onload="galleryOnload()">
+    <header>
+        <hr>
+        <div id="zegar" class="clock"></div>
+        <div>
+        <h1 class="title">Cooking</h1>
+    </div>
+        <div>
+        <a href="gallery.html" class="activelink">
+            Sign up for our latest cooking show!</a>
+        </div>
+        <div>
+        <a href="index.html" class="link">
+            Main page</a>
+        </div>
+        <div>
+        <a href="clicker.html" class="link">
+            Kebab Clicker Game</a>
+        </div>
+        <br>
+            <hr>
+    </header>
+    <br>
+    <br>
+    <div>
+    <form id="form1" action="odbierz.php" method="get" class="form">
+
+        <label for="username" class="text">Name:</label>
+        <input name="username" id="username" type="text" placeholder="Name" minlength="4" maxlength="16" required>
+
+        <br>
+        <br>
+
+        <label class="text">How many years have you been cooking for?</label>
+        <input name="years" id="years" type="number" required min="0" max="99" value="1">
+
+        <br>
+        <br>
+
+        <label class="text">Vegetarian/Vegan?</label>
+        <input name="vege" id="vege" type="checkbox">
+
+        <br>
+        <br>
+
+        <label for="recipe" class="text">Best recipe:</label><br>
+        <textarea name="recipe" id="recipe" rows="8" cols="40"></textarea>
+
+        <br>
+        <br>
+
+        <label for="pic" class="text">Attach picture:</label><br>
+        <input name="pic" id="pic" type="file" accept="image/png, image/jpeg">
+
+        <br>
+        <br>
+
+        <div id="ingredientButton"></div>
+        <div id="ingredients" class="text">
+        </div>
+
+        <br>
+
+        <input type="reset">
+
+        <br> <br>
+
+        <input type="submit">
+        
+    </form>
+    </div>
+    <br>
+    <br>
+    <footer>
+        <p>Paweł Szymański 197788</p>
+    </footer>
+</body>
+</html>

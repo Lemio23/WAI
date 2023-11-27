@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking</title>
+    <link rel="icon" type="image/jpg" href="Pictures/kebabicon.jpg">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $(".picture").mouseenter(function(){
+             $(this).animate({height: '500px'}, 75);
+          }); 
+          });
+     </script>
+     <script>
+      $(document).ready(function(){
+         $(".picture").mouseleave(function(){
+             $(this).animate({height: '300px'}, 75);
+         }); 
+     });
+     </script>
+</head>
+<body onload="clock()">
+    <header>
+        <hr>
+        <div id="zegar" class="clock"></div>
+        <div>
+        <h1 class="title">Cooking</h1>
+    </div>
+        <div>
+        <a href="gallery.html" class="link">
+            Sign up for our latest cooking show!</a>
+        </div>
+        <div>
+        <a href="index.html" class="activelink">
+        Main page</a>
+        </div>
+        <div>
+        <a href="clicker.html" class="link">
+            Kebab Clicker Game</a>
+        </div>
+        <br>
+            <hr>
+    </header>
+    <section>
+        <br>
+        <h3>Kebab</h3>
+        <pre class="text"><b>
+            Kebab is roasted meat that originates from the Middle East but has been popularised by Iranian cuisine & Turkish cuisine.
+            Many variants of the category are popular around the world, including the skewered shish kebab and the doner kebab with bread.
+            Kebabs consist of cut up or ground meat, sometimes with vegetables and various other accompaniments
+            according to the specific recipe. Although kebabs are typically cooked on a skewer over a fire, some kebab dishes are oven-baked in a pan,
+            or prepared as a stew such as tas kebab. The traditional meat for kebabs is most often lamb meat, but regional recipes may include beef, goat, chicken, fish,
+            or even pork (depending on whether or not there are specific religious prohibitions). </b>
+        </pre>
+        <img src="Pictures/kebab.avif"
+        alt="There should be a kebab here"
+        height="400"
+        class="picture">
+        <br><br><br>
+    </section>
+    <section>
+        <h3>Pizza</h3>
+        <pre class="text"><b>
+            Pizza is a dish of Italian origin consisting of a usually round, flat base of leavened wheat-based dough topped with tomatoes, cheese,
+            and often various other ingredients (such as various types of sausage, anchovies, mushrooms, onions, olives, vegetables, meat, ham, etc.),
+            which is then baked at a high temperature, traditionally in a wood-fired oven.
+            The term pizza was first recorded in the 10th century in a Latin manuscript from the Southern Italian town of Gaeta in Lazio, on the border with Campania.
+            Raffaele Esposito is often credited for creating modern pizza in Naples. In 2009, Neapolitan pizza was registered with the European Union as a Traditional Speciality Guaranteed dish.
+            In 2017, the art of making Neapolitan pizza was added to UNESCO's list of intangible cultural heritage.
+            Pizza and its variants are among the most popular foods in the world. Pizza is sold at a variety of restaurants, including pizzerias (pizza specialty restaurants),
+            Mediterranean restaurants, via delivery, and as street food. In Italy, pizza served in a restaurant is presented unsliced, and is eaten with the use of a knife and fork. In casual settings,
+            however, it is cut into wedges to be eaten while held in the hand. Pizza is also sold in grocery stores in a variety of forms, including frozen or as kits for self-assembly. They are then cooked using a home oven. 
+        </b></pre>
+        <img src="Pictures/pizza.avif"
+        alt="There should be a kebab here"
+        height="400"
+        class="picture">
+        <br><br><br>
+        <video controls class="picture" muted>
+            <source src="Pictures/video.mp4" type="video/mp4">
+        </video>
+    </section>
+    <br>
+    <br>
+    <section>
+        <h3>Burger</h3>
+        <pre class="text"><b>
+            A hamburger, or simply burger, is a food consisting of fillings—usually a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.
+            Hamburgers are often served with cheese, lettuce, tomato, onion, pickles, bacon, or chilis; condiments such as ketchup, mustard, mayonnaise, relish, or a "special sauce",
+            often a variation of Thousand Island dressing; and are frequently placed on sesame seed buns. A hamburger patty topped with cheese is called a cheeseburger.    
+            Hamburgers are typically sold at fast-food restaurants, diners, and other restaurants. There are many international and regional variations of hamburger.
+            Some of the largest multinational fast-food chains have a burger as one of their core products: McDonald's Big Mac and Burger King's Whopper have become global icons of American culture.
+        </b></pre>
+        <img src="Pictures/burger.jpg"
+        alt="There should be a kebab here"
+        class="picture">
+        <br><br><br>
+    </section>
+    <footer>
+        <a href="index.html" class="link2">Go back to the top of the page.</a>
+        <br>
+        <p>Paweł Szymański 197788</p>
+    </footer>
+</body>
+</html>

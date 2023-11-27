@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking</title>
+    <link rel="icon" type="image/jpg" href="Pictures/kebabicon.jpg">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+       $(document).ready(function(){
+         $(".picture2").mousedown(function(){
+            $(this).animate({height: '300px'}, 75);
+         }); 
+         });
+    </script>
+    <script>
+     $(document).ready(function(){
+        $(".picture2").mouseup(function(){
+            $(this).animate({height: '400px'}, 75);
+        }); 
+    });
+    </script>
+</head>
+<body onload="setClockAndClicker()">
+    <header>
+        <hr>
+        <div id="zegar" class="clock"></div>
+        <div>
+        <h1 class="title">Cooking</h1>
+        </div>
+        <div>
+        <a href="gallery.html" class="link">
+            Sign up for our latest cooking show!</a>
+        </div>
+        <div>
+        <a href="index.html" class="link">
+             Main page</a>
+           </div>
+           <div>
+        <a href="clicker.html" class="activelink">
+             Kebab Clicker Game</a>
+         </div>
+        <br>
+            <hr>
+    </header>
+    <br>
+    <div>
+        <p class="text" id="counter">
+            Gra nie jest dostępna bez javascript.
+        </p>
+    </div>
+    <div style="height: 400px;">
+        <img src="Pictures/cutekebab.jpg"
+        alt="There should be a kebab here"
+        class="picture2"
+        onclick="kebabClick()">
+    </div>
+    <br>
+    <p class="text">Wow!</p>
+    <br>
+    <br>
+    <footer>
+        <p>Paweł Szymański 197788</p>
+    </footer>
+</body>
+</html>
